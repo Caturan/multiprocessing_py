@@ -1,0 +1,26 @@
+The multiprocessing package mostly replicates the API of the threading module. 
+
+class multiprocessing.Process(group=None, target=None, name=None, args=(), kwargs={}, *, daemon=None)
+
+Process objects represent activity that is run in a seperate process. The Process class has equivalents of all the methods of threading.Thread. 
+
+Methods
+run():
+    Method representing the process's activity. 
+
+start():
+    Start the process's activity. 
+
+is_alive():
+    Return whether the process is alive. 
+
+pid:
+    Returns the process ID. Before the process is spawned. 
+
+kill():
+    Same as terminate() but using the SIGKILL signal on Unix
+
+close():
+    Close the Process object. Once close() returns succesfully, most other methods and attributes of the Project object will raise ValueError. 
+
+    
